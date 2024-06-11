@@ -1,0 +1,14 @@
+// buat package.json dengan node.js
+npm init
+
+//install tailwind css
+npm install -D tailwindcss
+
+// membuat unit config tailwind
+npx tailwindcss init
+
+// install lugin form tailwind
+npm install -D @tailwindcss/forms
+
+// jalankan script start
+npm run start

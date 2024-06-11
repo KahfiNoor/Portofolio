@@ -1,0 +1,24 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "Web for Portofolio Dev by Kahfi Noor",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KahfiNoor/Portofolio.git"
+  },
+  "author": "Muhammad Kahfy Noor Alwani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KahfiNoor/Portofolio/issues"
+  },
+  "homepage": "https://kahfinoor.github.io/Portofolio/",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "tailwindcss": "^3.4.4"
+  }
+}
