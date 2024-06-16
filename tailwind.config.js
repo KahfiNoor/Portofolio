@@ -5,7 +5,14 @@ module.exports = {
     './src/**/*.{html,js}'
   ],
   theme: {
+    container: {
+        center: true,
+        padding: '12px'
+    },
     extend: {
+      screens: {
+        '2xl': '1320px'
+      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
@@ -71,18 +78,21 @@ module.exports = {
         },
         '.btn-lg': {
           height: '2.5rem',
-          gap: '0.5rem',
+          gap: '0.75rem',
           padding: '0 1rem',
+          fontSize: '1rem'
         },
         '.btn-md': {
           height: '2rem',
-          gap: '0.5rem',
+          gap: '1rem',
           padding: '0 1rem',
+          fontSize: '1rem'
         },
         '.btn-sm': {
           height: '1.75rem',
-          gap: '0.25rem',
+          gap: '0.75rem',
           padding: '0 0.5rem',
+          fontSize: '0.75rem'
         },
       };
       addUtilities(newUtilities, ['responsive', 'hover', 'focus', 'active']);

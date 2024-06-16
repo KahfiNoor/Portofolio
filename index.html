@@ -6,31 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kahfi Noor | Fullstack Web Developer</title>
+    <!-- Style Tailwind CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Tambahkan ini untuk Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header Section Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-20">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="text-h2 font-bold text-secondary-400 block py-1 md:text-h1">KN.</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button type="button" name="hamburger" id="hamburger" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line origin-top-right transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line origin-bottom-right transition duration-300 ease-in-out"></span>
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-primary-900 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group"><a href="#home" class="text-base text-white py-2 mx-8 flex group-hover:text-secondary-400">Home</a></li>
+                            <li class="group"><a href="#about" class="text-base text-white py-2 mx-8 flex group-hover:text-secondary-400">About Me</a></li>
+                            <li class="group"><a href="#services" class="text-base text-white py-2 mx-8 flex group-hover:text-secondary-400">Services</a></li>
+                            <li class="group"><a href="#project" class="text-base text-white py-2 mx-8 flex group-hover:text-secondary-400">Projects</a></li>
+                            <li class="group"><a href="#contact" class="text-base text-white py-2 mx-8 flex group-hover:text-secondary-400">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Hero Section Start -->
-    <section id="home" class="bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center text-white"
+    <section id="home" class="bg-cover bg-center bg-no-repeat flex items-center justify-center text-white pt-48 pb-44"
         style="background-image: url('assets/img/hero.jpg');">
         <div class="container">
-            <div class="flex flex-wrap md:flex-row w-full items-center px-4">
-                <div class="w-full md:w-1/2 self-center px-4">
-                    <h1 class="text-h2 font-bold text-secondary-400">MUHAMMAD KAHFY NOOR ALWANI</h1>
-                    <h2 class="text-h5 font-medium flex flex-wrap gap-2">
-                        Fullstack Web Developer <span>&</span> <span class="text-slate-500">UI/UX Designer</span>
+            <div class="flex flex-wrap md:flex-row w-full items-center">
+                <div class="w-full lg:w-1/2 self-center px-3">
+                    <h1 class="text-h4 font-bold text-secondary-400 md:text-h2">MUHAMMAD KAHFY NOOR ALWANI</h1>
+                    <h2 class="text-p-16 font-medium flex flex-wrap gap-2 md:text-h5">
+                        Fullstack Web Developer <span>&</span> <span class="text-slate-400">UI/UX Designer</span>
                     </h2>
                     <div class="flex flex-wrap md:flex-row gap-2 py-4">
-                        <a href="https://www.linkedin.com/in/kahfy-noor" class="w-10">
+                        <a target="_blank" href="https://www.linkedin.com/in/kahfy-noor" class="w-10">
                             <img src="assets/img/icon/linkedin-negatif.svg" alt="Linkedin">
                         </a>
-                        <a href="https://www.github.com/KahfiNoor">
+                        <a target="_blank" href="https://www.github.com/KahfiNoor">
                             <img src="assets/img/icon/github-negatif.svg" alt="GitHub">
                         </a>
                     </div>
+
+                    <div class="inline-block mt-12">
+                        <a target="_blank" href="resume/cv_muhammad_kahfy_noor_alwani.pdf" class="btn btn-md bg-secondary-400 hover:bg-secondary-600">Download CV <i class="fas fa-download"></i></a>
+                    </div>
                 </div>
-                <div class="w-full md:w-1/2 self-end px-4">
-                    <div class="relative mt-10 md:mt-0 w-9/12 h-1/2 mx-auto">
+                <div class="w-full lg:w-1/2 self-end px-4">
+                    <div class="relative mt-10 md:mt-0 w-9/12 mx-auto transform transition duration-500 hover:scale-125 ">
                         <div class="absolute inset-0">
                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                                 <path fill="#FFB11F" d="M41.6,-69.7C54.9,-64.3,67.6,-55.3,73.7,-43.1C79.7,-30.9,79.2,-15.4,76.9,-1.3C74.7,12.9,70.7,25.7,64.5,37.6C58.2,49.4,49.6,60.2,38.5,70.2C27.3,80.2,13.7,89.4,0,89.4C-13.6,89.4,-27.3,80.2,-38.6,70.2C-49.9,60.3,-58.8,49.7,-64.6,37.9C-70.4,26.1,-73,13,-74.6,-0.9C-76.2,-14.9,-76.8,-29.8,-70.8,-41.3C-64.8,-52.7,-52.3,-60.7,-39.4,-66.4C-26.5,-72.1,-13.2,-75.4,0.4,-76.2C14.1,-76.9,28.2,-75.1,41.6,-69.7Z" transform="translate(100 100)" />
@@ -44,6 +77,354 @@
     </section>
     <!-- Hero Section End -->
 
+    <!-- About Section Start -->
+    <section id="about" class="pt-16 pb-10">
+        <div class="container">
+            <div class="flex flex-wrap md:flex-row">
+                <div class="w-full lg:w-1/2 self-start px-4">
+                    <img src="assets/img/post_1.jpg" alt="Post About" class="max-w-full mx-auto rounded-lg">
+                </div>
+                <div class="w-full lg:w-1/2 px-4 pt-4">
+                    <h1 class="text-h3 font-bold text-slate-950 pb-4">ABOUT ME</h1>
+                    <p class="text-p16">
+                        I'm Muhammad Kahfy Noor Alwani, an Undergraduate Student in Computer and Networking Engineering, and an IT enthusiast with experience as a web developer involving the design, development, and maintenance of websites. My ability to implement various programming languages, such as HTML, CSS, JavaScript, and PHP has allowed me to create attractive and functional interfaces. I also possess skills in using frameworks like CodeIgniter, Laravel, and Node.js to enhance the responsiveness and complexityof websites. Additionally, I have delved into Cloud Computing and Virtualization, exploring various features of Google Cloud products such as Compute Engine, App Engine, Cloud Run, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="pt-16 pb-10 bg-primary-700">
+        <div class="container">
+            <div class="text-center pb-4">
+                <h1 class="text-h3 font-bold text-white">SERVICES</h1>
+            </div>
+            <div class="flex flex-wrap justify-center">
+                <!-- Web Development Service Box -->
+                <div class="w-full md:w-1/3 p-4">
+                    <div class="bg-white shadow-sm rounded-lg p-6 text-center transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="flex mb-5 justify-center">
+                            <img src="assets/img/icon/web-dev.svg" alt="Web Developer Image" class="w-16">
+                        </div>
+                        <h2 class="text-h5 font-bold mb-3">Web Development</h2>
+                        <p class="text-p16">Developing responsive and dynamic websites, creating engaging and interactive user experiences on the internet.</p>
+                        <div class="flex flex-wap justify-center mt-12">
+                            <img src="assets/img/icon/html.svg" alt="HTML" class="p-2">
+                            <img src="assets/img/icon/css.svg" alt="CSS" class="p-2">
+                            <img src="assets/img/icon/js.svg" alt="JavaScript" class="p-2">
+                            <img src="assets/img/icon/codeigniter.svg" alt="CodeIgniter" class="p-2">
+                        </div>
+                    </div>
+                </div>
+                <!-- UI/UX Designer Service Box -->
+                <div class="w-full md:w-1/3 p-4">
+                    <div
+                        class="bg-white shadow-sm rounded-lg p-6 text-center transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="flex mb-5 justify-center">
+                            <img src="assets/img/icon/ui-ux-design.svg" alt="Web Developer Image" class="w-16">
+                        </div>
+                        <h2 class="text-h5 font-bold mb-3">UI/UX Design</h2>
+                        <p class="text-p16">Designing intuitive and aesthetically pleasing interfaces that enhance user satisfaction and overall experience.</p>
+                        <div class="flex flex-wap justify-center mt-12">
+                            <img src="assets/img/icon/figma.svg" alt="Figma" class="p-2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Database Connection Service Box -->
+                <div class="w-full md:w-1/3 p-4">
+                    <div
+                        class="bg-white shadow-sm rounded-lg p-6 text-center transform transition duration-300 hover:shadow-xl hover:-translate-y-1">
+                        <div class="flex mb-5 justify-center">
+                            <img src="assets/img/icon/database-conn.svg" alt="Web Developer Image" class="w-16">
+                        </div>
+                        <h2 class="text-h5 font-bold mb-3">Database Connection API</h2>
+                        <p class="text-p16">Implementing secure and efficient database connections to ensure seamless data retrieval and storage for web applications.</p>
+                        <div class="flex flex-wap justify-center mt-12">
+                            <img src="assets/img/icon/nodejs.svg" alt="Node.JS" class="p-2">
+                            <img src="assets/img/icon/php.svg" alt="PHP" class="p-2">
+                            <img src="assets/img/icon/sql.svg" alt="SQL" class="p-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Project Section Start -->
+    <section id="project" class="pt-16 pb-10">
+        <div class="container">
+            <div class="text-center pb-4">
+                <h1 class="text-h3 font-bold text-slate-950">PROJECTS</h1>
+            </div>
+            <!-- Project Baris 1 Start -->
+            <div class="flex flex-wrap justify-center">
+                <!-- Project 1 Start -->
+                <div class="w-full lg:w-1/2 mt-6">
+                    <div class="shadow-lg rounded-lg mx-4">
+                        <div class="flex flex-wrap md:flex-row">
+                            <div class="w-full lg:w-1/2">
+                                <img src="assets/img/project/football.png" alt="Image Project" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <div class="w-full px-4 flex flex-col lg:w-1/2">
+                                <div class="py-2 ">
+                                    <h2 class="text-h5 font-bold mb-3">Football Maniacs API</h2>
+                                    <p class="text-p12">Football Maniacs is a project that provides a comprehensive API for accessing the latest and detailed information about football leagues, clubs, and players, facilitating the integration of football data into various applications.
+                                    </p>
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-wrap justify-center mt-8 gap-0.5">
+                                        <img src="assets/img/icon/html.svg" alt="HTML" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/css.svg" alt="CSS" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/js.svg" alt="JavaScript" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/php.svg" alt="PHP" class="w-8 h-8 mx-2">
+                                        <img src="assets/img/icon/sql.svg" alt="SQL" class="w-6 h-6 mx-2">
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <a target="_blank" href="https://github.com/KahfiNoor/football-maniacs/" class="text-tertiary-400  text-p12 font-medium flex items-center gap-2 hover:text-tertiary-600 justify-end">See Repository <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 1 End -->
+                <!-- Project 2 Start -->
+                <div class="w-full lg:w-1/2 mt-4">
+                    <div class="shadow-lg rounded-lg mx-4">
+                        <div class="flex flex-wrap md:flex-row">
+                            <div class="w-full lg:w-1/2">
+                                <img src="assets/img/project/shurya_snack.png" alt="Image Project" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <div class="w-full px-4 flex flex-col lg:w-1/2">
+                                <div class="py-2 ">
+                                    <h2 class="text-h5 font-bold mb-3">Shurya Snack Apps</h2>
+                                    <p class="text-p12">The Shurya Snack App mobile application is a cashier and money management solution designed to simplify transactions and financial management in the snack food business.</p>
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-wrap justify-center mt-8 gap-0.5">
+                                        <img src="assets/img/icon/java.svg" alt="Java" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/android-studio.svg" alt="Android Studio" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/firebase.svg" alt="Firebase" class="w-6 h-6 mx-2">
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <a target="_blank" href="https://github.com/KahfiNoor/my-quran-audio-tafsir" class="text-tertiary-400  text-p12 font-medium flex items-center gap-2 hover:text-tertiary-600 justify-end">See Repository <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 End -->
+                <!-- Project 3 Start -->
+                <div class="w-full lg:w-1/2 mt-4">
+                    <div class="shadow-lg rounded-lg mx-4">
+                        <div class="flex flex-wrap md:flex-row">
+                            <div class="w-full lg:w-1/2">
+                                <img src="assets/img/project/quran.png" alt="Image Project" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <div class="w-full px-4 flex flex-col lg:w-1/2">
+                                <div class="py-2 ">
+                                    <h2 class="text-h5 font-bold mb-3">Quran: Ayat, Audio, and Tafsir</h2>
+                                    <p class="text-p12">The comprehensive Al-Qur'an web project provides verses, audio, and tafsir to facilitate the thorough study and understanding of the Al-Qur'an.</p>
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-wrap justify-center mt-8 gap-0.5">
+                                        <img src="assets/img/icon/html.svg" alt="HTML" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/css.svg" alt="CSS" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/js.svg" alt="JavaScript" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/php.svg" alt="PHP" class="w-8 h-8 mx-2">
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <a target="_blank" href="https://github.com/KahfiNoor/my-quran-audio-tafsir" class="text-tertiary-400  text-p12 font-medium flex items-center gap-2 hover:text-tertiary-600 justify-end">See Repository <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 End -->
+                <!-- Project 4 Start -->
+                <div class="w-full lg:w-1/2 mt-4">
+                    <div class="shadow-lg rounded-lg mx-4">
+                        <div class="flex flex-wrap md:flex-row">
+                            <div class="w-full lg:w-1/2">
+                                <img src="assets/img/project/sparepart.png" alt="Image Project" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <div class="w-full px-4 flex flex-col lg:w-1/2">
+                                <div class="py-2 ">
+                                    <h2 class="text-h5 font-bold mb-3">Sparepart Motocyc</h2>
+                                    <p class="text-p12">Sparepart Motcyc is a cashier application specifically designed for motorcycle spare parts sales, offering an easy-to-use interface for inventory management, sales transactions, and financial.</p>
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-wrap justify-center mt-8 gap-0.5">
+                                        <img src="assets/img/icon/html.svg" alt="HTML" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/css.svg" alt="CSS" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/js.svg" alt="JavaScript" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/php.svg" alt="PHP" class="w-8 h-8 mx-2">
+                                        <img src="assets/img/icon/sql.svg" alt="SQL" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/codeigniter.svg" alt="CodeIgniter" class="w-6 h-6 mx-2">
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <a target="_blank" href="https://github.com/KahfiNoor/sparepart-motcyc" class="text-tertiary-400  text-p12 font-medium flex items-center gap-2 hover:text-tertiary-600 justify-end">See Repository <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 End -->
+                <!-- Project 5 Start -->
+                <div class="w-full lg:w-1/2 mt-4">
+                    <div class="shadow-lg rounded-lg mx-4">
+                        <div class="flex flex-wrap md:flex-row">
+                            <div class="w-full lg:w-1/2">
+                                <img src="assets/img/project/inventaris.png" alt="Image Project" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <div class="w-full px-4 flex flex-col lg:w-1/2">
+                                <div class="py-2 ">
+                                    <h2 class="text-h5 font-bold mb-3">Web Apps for SME Inventory Management</h2>
+                                    <p class="text-p12">The web inventory system is a web-based solution that aids in the management, recording, and tracking of inventory items more efficiently and in an organized manner.</p>
+                                </div>
+                                <div class="mt-auto w-full">
+                                    <div class="flex flex-wrap justify-center mt-8 gap-0.5">
+                                        <img src="assets/img/icon/html.svg" alt="HTML" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/css.svg" alt="CSS" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/js.svg" alt="JavaScript" class="w-6 h-6 mx-2">
+                                        <img src="assets/img/icon/php.svg" alt="PHP" class="w-8 h-8 mx-2">
+                                        <img src="assets/img/icon/google-sheets.svg" alt="Sheet" class="w-8 h-8 mx-2">
+                                    </div>
+                                </div>
+                                <div class="py-4">
+                                    <a target="_blank" href="https://github.com/KahfiNoor/my-quran-audio-tafsir" class="text-tertiary-400 text-p12 font-medium flex items-center gap-2 hover:text-tertiary-600 justify-end">See Repository <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+                <!-- Project 5 End -->
+            </div>
+            <!-- Project Baris 3 End -->
+        </div>
+    </section>
+    <!-- Project Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-16 pb-10 bg-sky-100">
+        <div class="container">
+            <div class="text-center pb-4">
+                <h1 class="text-h3 font-bold text-slate-950">Get in Touch</h1>
+                <p class="text-lg text-gray-600 mb-8">Feel free to reach out through one of the following channels.</p>
+            </div>
+            <!-- Contact Cards Start -->
+            <div class="flex flex-wrap justify-center px-2">
+                <div class="w-full md:w-1/3 my-2 px-2">
+                    <div class="bg-white rounded-lg p-4 text-center transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-800">Email</h3>
+                            <i class="fas fa-envelope text-gray-500"></i>
+                        </div>
+                        <p class="text-gray-600">kahfinoor013@gmail.com</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 my-2 px-2">
+                    <div class="bg-white rounded-lg p-4 text-center transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-800">Phone</h3>
+                            <i class="fas fa-phone-alt text-gray-500"></i>
+                        </div>
+                        <p class="text-gray-600">(ID) +62 878 6495 9745</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 my-2 px-2">
+                    <div class="bg-white rounded-lg p-4 text-center transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg font-semibold text-gray-800">Address</h3>
+                            <i class="fas fa-map-marker-alt text-gray-500"></i>
+                        </div>
+                        <p class="text-gray-600">Makassar, Sulawesi Selatan, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Cards End -->
+            <!-- Social Media Links Start -->
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Connect With Me</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-500">
+                        <img src="assets/img/icon/instagram.svg" alt="Connect" class="w-8 h-8">
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">
+                        <img src="assets/img/icon/linkedin.svg" alt="Connect" class="w-8 h-8">
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500">
+                        <img src="assets/img/icon/github.svg" alt="Connect" class="w-8 h-8">
+                    </a>
+                    <!-- <a href="#" class="text-gray-600 hover:text-blue-500">
+                        <img src="assets/img/icon/discord.svg" alt="Connect" class="w-8 h-8">
+                    </a> -->
+                </div>
+            </div>
+            <!-- Social Media Links End -->
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="pt-12 bg-gray-800">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-8 text-slate-300 md:w-1/3">
+                    <h2 class="text-h2 font-bold text-secondary-400 mb-5">KN.</h2>
+                    <h3 class="text-h5 font-bold mb-2">Contact</h3>
+                    <p class="text-p12">kahfinoor013@gmail.com</p>
+                    <p class="text-p12">(ID) +62 878 6495 9745</p>
+                    <p class="text-p12">Makassar, Sulawesi Selatan, Indonesia</p>
+                </div>
+                <div class="w-full px-4 mb-8 md:w-1/3">
+                    <h3 class="text-h5 font-semibold text-white mb-5">Navigation</h3>
+                    <ul class="text-slate-300">
+                        <li class="group"><a href="#home" class="inline-block text-base group-hover:text-secondary-400 mb-3">Home</a></li>
+                        <li class="group"><a href="#about" class="inline-block text-base group-hover:text-secondary-400 mb-3">About Me</a></li>
+                        <li class="group"><a href="#services" class="inline-block text-base group-hover:text-secondary-400 mb-3">Services</a></li>
+                        <li class="group"><a href="#project" class="inline-block text-base group-hover:text-secondary-400 mb-3">Project</a></li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-8 md:w-1/3">
+                    <h3 class="text-h5 font-semibold text-white mb-5">Social Media</h3>
+                    <div class="flex flex-wrap md:flex-row gap-4">
+                        <a target="_blank" href="https://www.linkedin.com/in/kahfy-noor">
+                            <img src="assets/img/icon/linkedin-negatif.svg" alt="Linkedin" class="w-6">
+                        </a>
+                        <a target="_blank" href="https://www.github.com/KahfiNoor">
+                            <img src="assets/img/icon/github-negatif.svg" alt="GitHub" class="w-6">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/kahfi_noor13?utm_source=qr&igsh=MTY5ZHJ0bm4xdWFjNQ==">
+                            <img src="assets/img/icon/instagram-negatif.svg" alt="instagram" class="w-6">
+                        </a>
+                        <a target="_blank" href="https://twitter.com/kahfinoor_?t=BHKW0Lm09zw2N9iwoSDJGw&s=08">
+                            <img src="assets/img/icon/x-negatif.svg" alt="X" class="w-6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="bg-secondary-400">
+        <div class="container flex mx-auto justify-between text-p12 py-2">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+            <p>
+                <a href="#" class="text-slate-600 hover:text-slate-900">Terms of Service</a> |
+                <a href="#" class="text-slate-600 hover:text-slate-900">Privacy Policy</a>
+            </p>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Javascript File -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
